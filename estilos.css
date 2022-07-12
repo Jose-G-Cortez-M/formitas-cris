@@ -93,6 +93,7 @@ header {
 }
 
 header .logo {
+    text-decoration: none;
     font-size: 2rem;
     color: var(--celeste);
 }
@@ -100,8 +101,12 @@ header .logo {
 header .logo span {
     color: var(--rosado);
 }
+header .logo img{
+    width: 4.5rem;
+}
 
 header .navbar a {
+    text-decoration: none;
     font-size: 1.8rem;
     margin-left: 2rem;
     color: var(--celeste);
@@ -136,7 +141,7 @@ header label {
 }
 
 .inicio .image img {
-    width: 40vw;
+    width: 50vw;
     animation: float 3s linear infinite;
 }
 
@@ -170,7 +175,7 @@ header label {
 /*acerca_de*/
 
 .acerca_de {
-    background: url(img/fondo_2.jpg) no-repeat;
+    background: url(img/inicio_fondo.jpg) no-repeat;
     background-size: auto;
     background-position: center;
     padding-bottom: 2rem;
@@ -185,97 +190,47 @@ header label {
 
 .acerca_de .columna .image {
     flex: 1 1 40rem;
+    align-content: center;
+    justify-content: center;
 }
 
 .acerca_de .columna .image .img {
-    width: 45%;
+    width: 65%;
+    animation: superman 3s linear infinite;
+}
+.acerca_de .columna .img {
+    width: 35%;
+    animation: float 3s linear infinite;
+}
+.acerca_de .columna .content {
+ display: flex;
 }
 
-.acerca_de .columna .content {
-    flex: 1 1 40rem;
-}
+
 .acerca_de .columna .content h1 {
-    height: 100%;
+    
     font-size: 3rem;
     color: #333;
 }
 
-
-
 .acerca_de .columna .content p {
-    font-size: 1.5rem;
-    color: #666;
-    padding: 1rem 0;
-}
-
-
-/*Precios*/
-
-.precios .caja-contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.precios .caja-contenedor .caja {
-    flex: 1 1 28rem;
-    margin: 1rem;
-    padding: 1rem;
-    background: white;
-    border: .1rem solid rgba(0, 0, 0, .2);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    border-radius: .5rem;
-    text-align: center;
-    padding-bottom: 3rem;
-}
-
-.precios .caja-contenedor .caja:nth-child(2),
-.precios .caja-contenedor .caja:hover {
-    border: .2rem solid var(--limon);
-}
-
-.precios .caja-contenedor .caja .titulo {
-    color: var(--verde);
-    font-size: 2.5rem;
-    padding-top: 1rem;
-}
-
-.precios .caja-contenedor .caja .tipos {
-    font-size: 4rem;
-    color: var(--verde);
-    padding: 1rem 0;
-}
-
-.precios .caja-contenedor .caja .tipos span {
-    font-size: 2rem;
-}
-
-.precios .caja-contenedor .caja ul {
-    padding: 1rem 0;
-    list-style: none;
-}
-
-.precios .caja-contenedor .caja ul li {
-    font-size: 1.7rem;
+    font-size: 2.0rem;
     color: #333;
-    padding: .5rem 0;
+    padding: 1rem 0;
 }
-
-.precios .caja-contenedor .caja ul li .fa-check {
-    color: lightgreen;
+@keyframes superman {
+    0%,
+    100% {
+        transform: translateX(8.5rem);
+    }
+    50% {
+        transform: translateX(1.5rem);
+    }
 }
-
-.precios .caja-contenedor .caja ul li .fa-circle-xmark {
-    color: red;
-}
-
-
 
 
 /*galeria*/
-
-.detalles{
+.galeriatresd{
     padding: 15px;
     align-items: center;
     justify-content: center;
@@ -284,104 +239,60 @@ header label {
     background-position: center;
 }
 
-.detalles .caja-contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-
-.detalles .caja-contenedor img {
-    height: 15rem;
-}
-
-.detalles h1 {
-    font-size: 5.5rem;
+.galeriatresd h1 {
+    text-align: center;
+    font-size: 3rem;
     color: #333;
     padding-top: 1rem;
 }
 
-.caja-contenedor .card{
-    width: 300px;
-    height: 400px;
-    background: #000;
-    border-radius: 30px;
-    overflow: hidden;
-    position: relative;
+.galeriatresd p {
+    font-size: 1.5rem;
+    color: #333;
+    padding: 1rem 0;
+}
+.galeriatresd a{
     display: flex;
-    align-items: center;
     justify-content: center;
-    cursor: pointer;
-    transition: all .25s case;
-    backface-visibility: hidden;
-}
-.caja-contenedor .card:hover{
-    transform: scale(.9);
-}
-.caja-contenedor .card:hover::after{
-    height: 280px;
-}
-.caja-contenedor .card:hover .con-text p{
-    font-size: 18px;
-    margin-bottom: 8px;
-    opacity: 1;
-}
-.caja-contenedor .card:hover img{
-    transform:scale(1.25);
-}
-.caja-contenedor .card:after{
-    width: 100%;
-    content: '';
-    left: 0px;
-    bottom: 0px;
-    height: 150px;
-    position: absolute;
-    background: linear-gradient(180deg,rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-    z-index: 20;
-    transition: all .25s ease;
-}
-.caja-contenedor .card img{
-    height: 100%;
-    z-index: 10;
-    transition: all .25 ease;
-}
-.caja-contenedor .card .con-text{
-    z-index: 30;
-    position: absolute;
-    bottom: 0px;
-    color:#fff;
-    padding: 20px;
-    padding-bottom: 30px;
-}
-.caja-contenedor .card .con-text p{
-    font-size: .8rem;
-    opacity: 0;
-    margin-bottom: -170px;
-    transition: all .25s ease;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: column;
-}
-.caja-contenedor .card .con-text p button{
-    padding: 7px 17px;
-    border-radius: 12px;
-    background: transparent;
-    border: 2px solid #fff;
-    color: #fff;
-    margin-top: 10px;
-    margin-left: auto;
-    cursor: pointer;
-    transition: all .25s ease;
-    font-family: .75rem;
-    outline: none;
-}
-.caja-contenedor .card .con-text p button:hover{
-    background: #fff;
-    color:#000;
+    align-items: center; 
 }
 
+.galeriatresd .card{
+    width: 350px;
+    height:650px;
+}
+
+.galeriadosd .card{
+    width: 350px;
+    height:600px;
+}
+
+.galeriadosd{
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    background: url(img/inicio_fondo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.galeriadosd h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    padding-top: 1rem;
+}
+
+.galeriadosd p {
+    font-size: 1.5rem;
+    color: #333;
+    padding: 1rem 0;
+}
+.galeriadosd a{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
 
 
 /*footer*/
