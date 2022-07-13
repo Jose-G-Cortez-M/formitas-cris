@@ -7,14 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="estilos.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Formitas Cris</title>
 </head>
 
 <body>
     <!--Barra de navegación-->
     <header>
-        <a href="#inicio" class="logo"><img src="img/peluche_1.png" alt=""><span>CREANDO FORMITAS </span>CON CRIS</a>
+        <a href="#inicio" class="logo"><img src="img/peluche_1.png" alt="peluche"><span>CREANDO FORMITAS </span>CON CRIS</a>
 
         <input type="checkbox" id="menu-bar">
         <label for="menu-bar" class="fa fa-bars"></label>
@@ -23,8 +22,8 @@
         <nav class="navbar" styles="text-decoration: none;">
             <a href="#inicio">inicio</a>
             <a href="#acerca_de">acerca de</a>
-            <a href="#galeriatresd">galeria 3D</a>
-            <a href="#galeriadosd">galeria 2D</a>
+            <a href="#.galeria_tres_d">galeria 3D</a>
+            <a href="#.galeria_dos_d">galeria 2D</a>
         </nav>
     </header>
     <!--inicio-->
@@ -35,7 +34,7 @@
             <a href="https://n9.cl/f1sfv" target="_blank" class="btn">COTIZACIONES</a>
         </div>
         <div class="image">
-            <img src="./img/logo_1.png" alt="">
+            <img src="./img/logo_1.png" alt=" Logo">
         </div>
     </section>
     <!--acerca de-->
@@ -46,138 +45,127 @@
                 <h1>FORMITAS CRIS!!! ES...</h1>
             </div>
             <div class="content">
-                <img class="img" src="img/fomi-graduado_4_nino.png" alt="">
+                <img class="img" src="img/fomi-graduado_4_nino.png" alt="Fomi Graduado niño">
                 <div class="image">
-                    <img class="img" src="img/fomi-superman.png" alt="">
+                    <img class="img" src="img/fomi-superman.png" alt="Fomi Superman">
                 </div>
-                <img class="img" src="img/fomi-graduado_4_nina.png" alt="">
+                <img class="img" src="img/fomi-graduado_4_nina.png" alt="Fomi graduado niña">
             </div>
             <div class="content">
                 <p> Una pasión por las manualidades el arte de crear figuras a partir de materiales dinámicos, y ahora se vuelve un emprendimiento en el cuál nos dedicamos a ser realidad tus sueños para regalar a gente que amas, todos los trabajos se realizan con amor y con el mayor cuidado posible. Somos la mejor opción en trabajos de fomix con un amplio catálogo y clientes satisfechos 😉</p>
             </div>
         </div>
     </section>
-    <!--detalles-->
-    <section class="galeriatresd" id="galeriatresd">
-        <h1 class="heading">GALERIA 3D</h1>
 
-        <div class="row row-cols-1 row-cols-sm-3 g-3">
-            <div class="col">
-              <div class="card">
-                <img src="img/fomi-deportista.jpeg" class="card-img-top" alt="fomi deportista">
-                <div class="card-body">
-                  <h1>Deportista</h1>
-                  <p class="card-text">            
-                    •Modelo: Fofucha en plano realista (3D) personalizada con uniforme de colegio.<br>
-                    •Medidas: 30 cm<br>
-                    •Valor: $10 
+    <!--detalles-->
+    <section class="galeria_tres_d" id="galeria_tres_d">
+      <h1 class="heading">GALERIA 3D</h1>
+          <div class="grid">
+
+            <div class="card">
+              <div class="imagen">
+                <img src="img/fomi-deportista.jpeg" alt="Fomi Deportista">
+              </div>
+              <div class="descripcion">
+                <h1>Deportista</h1>
+                <p>
+                  •Modelo: Fofucha en plano realista (3D) personalizada con uniforme de colegio.<br>
+                  •Medidas: 30 centímetros<br>
+                  •Valor: $10
                 </p>
-                <a href="https://wa.me/5930995762501" class="btn btn-primary">Compra ya!!!</a>
-                <a href="https://n9.cl/f1sfv" class="btn btn-primary">Cotiza ya!!</a>
+                <div class="botones">
+                  <a href="https://n9.cl/f1sfv" target="_blank" class="btn">COTIZAR YA!!!</a>
+                  <a href="https://wa.me/5930995762501" target="_blank" class="btn">COMPRAR YA!!</a>
                 </div>
               </div>
             </div>
-            <div class="col">
-                <div class="card">
-                  <img src="img/fomi-princesa.png" class="card-img-top" alt="Fomi Princesa">
-                  <div class="card-body">
-                    <h1>Princesa</h1>
-                    <p class="card-text">            
-                        •Modelo: Fofucha con adorno de perlas en el pecho, ramo de flores, y falta elaborada en tela.<br>
-                        •Medidas: 30 cm<br>
-                        •Valor: $15
-                  </p>
-                  <a href="https://wa.me/5930995762501" class="btn btn-primary">Compra ya!!!</a>
-                  <a href="https://n9.cl/f1sfv" class="btn btn-primary">Cotiza ya!!</a>
-                  </div>
-                </div>
-              </div>
 
-              <div class="col">
-                <div class="card">
-                  <img src="img/fomi-cumpleaños.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h1>Cumpleaños</h1>
-                    <p class="card-text">            
-                        •Modelo: Combo Cumpleañero, personalizado con nombre, vela de cumpleaños, base, y fofucha en modelo realista (3D). Diseño de Mario y Luigi.<br>
-                        •Medidas: Fofucha 15 cm y Vela 10 cm.<br>
-                        •Valor: $6 cada figura
-                  </p>
-                  <a href="https://wa.me/5930995762501" class="btn btn-primary">Compra ya!!!</a>
-                  <a href="https://n9.cl/f1sfv" class="btn btn-primary">Cotiza ya!!</a>
-                  </div>
+            <div class="card">
+              <div class="imagen">
+                <img src="./img/fomi-princesa.png" alt="Fomi Princesa">
+              </div>
+              <div class="descripcion">
+                <h1>Princesa</h1>
+                <p>
+                  •Modelo: Fofucha con adorno de perlas en el pecho, ramo de flores, y falta elaborada en tela.<br>
+                  •Medidas: 30 centímetros<br>
+                  •Valor: $15
+                </p>
+                <div class="botones">
+                  <a href="https://n9.cl/f1sfv" target="_blank" class="btn">COTIZAR YA!!!</a>
+                  <a href="https://wa.me/5930995762501" target="_blank" class="btn">COMPRAR YA!!</a>
                 </div>
               </div>
-              <div class="col">
-                <div class="card">
-                  <img src="img/fomi-spiderman.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h1>Spiderman</h1>
-                    <p class="card-text">            
-                        •Modelo: Combo cumpleañero personalizado con nombre, vela de cumpleaños con número y fofucha en modelo realista (3D).<br>
-                        •Medidas: Fofucha Spiderman 30 cm, Vela de cumpleaños  15 cm.<br>
-                        •Valor: $12 
-                  </p>
-                  <a href="https://wa.me/5930995762501" class="btn btn-primary">Compra ya!!!</a>
-                  <a href="https://n9.cl/f1sfv" class="btn btn-primary">Cotiza ya!!</a>
-                  </div>
+            </div>
+            
+
+            <div class="card">
+              <div class="imagen">
+                <img src="./img/fomi-cumpleaños.jpg" alt="Fomi Cumpleaños">
+              </div>
+              <div class="descripcion">
+                <h1>Cumpleaños</h1>
+                <p>
+                  •Modelo: Combo Cumpleañero, personalizado con nombre, vela de cumpleaños, base, y fofucha en modelo realista (3D). Diseño de Mario y Luigi.<br>
+                  •Medidas: Fofucha 15 cm y Vela 10 cm.<br>
+                  •Valor: $6 cada figura                
+                </p>
+                <div class="botones">
+                  <a href="https://n9.cl/f1sfv" target="_blank" class="btn">COTIZAR YA!!!</a>
+                  <a href="https://wa.me/5930995762501" target="_blank" class="btn">COMPRAR YA!!</a>
                 </div>
               </div>
+            </div>
+
+            <div class="card">
+              <div class="imagen">
+                <img src="./img/fomi-spiderman.jpg" alt="Fomi Spiderman">
+              </div>
+              <div class="descripcion">
+                <h3>Spiderman</h3>
+                <p>
+                  •Modelo: Combo cumpleañero personalizado con nombre, vela de cumpleaños con número y fofucha en modelo realista (3D). Diseño Spiderman.<br>
+                  •Medidas: Fofucha Spiderman 30 cm, Vela de cumpleaños  15 cm.<br>
+                  •Valor: $12                </p>
+                <div class="botones">
+                  <a href="https://n9.cl/f1sfv" target="_blank" class="btn">COTIZAR YA!!!</a>
+                  <a href="https://wa.me/5930995762501" target="_blank" class="btn">COMPRAR YA!!</a>
+                </div>
+              </div>
+            </div>
+
+        
+          </div>
+
     </section>
     
 
 
 
-    <section class="galeriadosd" id="galeriadosd">
-        <h1 class="heading">GALERIA 2D</h1>
+    <section class="galeria_dos_d" id="galeria_dos_d">
+      <h1 class="heading">GALERIA 2D</h1>
+      <div class="grid">
 
-        <div class="row row-cols-1 row-cols-sm-3 g-3">
-            <div class="col">
-                <div class="card">
-                  <img src="img/fomi-wacamaya.jpg" class="card-img-top" alt="Fomi tucan">
-                  <div class="card-body">
-                    <h1>Tucán</h1>
-                    <p class="card-text">            
-                        •Modelo: Figura plana, elaboración de tucan multicolor.<br>
-                        •Medidas: 30 cm<br>
-                        •Valor: $3
-                  </p>
-                  <a href="https://wa.me/5930995762501" class="btn btn-primary">Compra ya!!!</a>
-                  <a href="https://n9.cl/f1sfv" class="btn btn-primary">Cotiza ya!!</a>
-                  </div>
-                </div>
-              </div>
-            <div class="col">
-                <div class="card">
-                  <img src="img/fomi-deportista.jpeg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h1>Deportista</h1>
-                    <p class="card-text">            
-                      •Modelo: Fofucha en plano realista (3D) personalizada con uniforme de colegio.<br>
-                      •Medidas: 30 centímetros<br>
-                      •Valor: $10 
-                  </p>
-                  <a href="https://wa.me/5930995762501" class="btn btn-primary">Compra ya!!!</a>
-                  <a href="https://n9.cl/f1sfv" class="btn btn-primary">Cotiza ya!!</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img src="img/fomi-deportista.jpeg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h1>Deportista</h1>
-                    <p class="card-text">            
-                      •Modelo: Fofucha en plano realista (3D) personalizada con uniforme de colegio.<br>
-                      •Medidas: 30 centímetros<br>
-                      •Valor: $10 
-                  </p>
-                  <a href="https://wa.me/5930995762501" class="btn btn-primary">Compra ya!!!</a>
-                  <a href="https://n9.cl/f1sfv" class="btn btn-primary">Cotiza ya!!</a>
-                  </div>
-                </div>
-              </div>
+        <div class="card">
+          <div class="imagen">
+            <img src="img/fomi-tucan.jpg" alt="fomi tucán">
           </div>
+          <div class="descripcion">
+            <h1>Tucán</h1>
+            <p>
+              •Modelo: Figura plana, elaboración de tucan multicolor.<br>
+              •Medidas: 30 cm<br>
+              •Valor: $3
+            </p>
+            <div class="botones">
+              <a href="https://n9.cl/f1sfv" target="_blank" class="btn">COTIZAR YA!!!</a>
+              <a href="https://wa.me/5930995762501" target="_blank" class="btn">COMPRAR YA!!</a>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+
     </section>
 
     <!--FOOTER-->

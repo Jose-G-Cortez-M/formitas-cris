@@ -175,10 +175,12 @@ header label {
 /*acerca_de*/
 
 .acerca_de {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: url(img/inicio_fondo.jpg) no-repeat;
-    background-size: auto;
+    background-size: cover;
     background-position: center;
-    padding-bottom: 2rem;
 }
 
 .acerca_de .columna {
@@ -230,8 +232,8 @@ header label {
 
 
 /*galeria*/
-.galeriatresd{
-    padding: 15px;
+
+.galeria_tres_d{
     align-items: center;
     justify-content: center;
     background: url(img/inicio_fondo.jpg) no-repeat;
@@ -239,36 +241,48 @@ header label {
     background-position: center;
 }
 
-.galeriatresd h1 {
-    text-align: center;
-    font-size: 3rem;
+.galeria_tres_d .heading{
+    font-size: 2rem;
     color: #333;
     padding-top: 1rem;
 }
+.galeria_tres_d .grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.galeria_tres_d .grid .card{
+    flex: 1 1 20rem;
+    background: white;
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, rgba(0, 0, 0, .1));
+    margin: 1.5rem;
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: .2s linear;
+}
 
-.galeriatresd p {
-    font-size: 1.5rem;
-    color: #333;
+.galeria_tres_d .grid .imagen img{
+    max-width: 95%;
+    object-fit: cover;
+
+}
+
+.galeria_tres_d .grid .descripcion p{
+    font-size: 1.3rem;
+    color: #666;
     padding: 1rem 0;
 }
-.galeriatresd a{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+
+.galeria_tres_d .grid .descripcion .botones a{
+    margin-left: 2rem;
 }
 
-.galeriatresd .card{
-    width: 350px;
-    height:620px;
-}
 
-.galeriadosd .card{
-    width: 350px;
-    height:600px;
-}
 
-.galeriadosd{
-    padding: 15px;
+.galeria_dos_d{
     align-items: center;
     justify-content: center;
     background: url(img/inicio_fondo.jpg) no-repeat;
@@ -276,24 +290,44 @@ header label {
     background-position: center;
 }
 
-.galeriadosd h1 {
-    text-align: center;
-    font-size: 3rem;
+.galeria_dos_d .heading{
+    font-size: 2rem;
     color: #333;
     padding-top: 1rem;
 }
+.galeria_dos_d .grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.galeria_dos_d .grid .card{
+    flex: 1 1 20rem;
+    background: white;
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, rgba(0, 0, 0, .1));
+    margin: 1.5rem;
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: .2s linear;
+}
 
-.galeriadosd p {
-    font-size: 1.5rem;
-    color: #333;
+.galeria_dos_d .grid .imagen img{
+    max-width: 95%;
+    object-fit: cover;
+
+}
+
+.galeria_dos_d .grid .descripcion p{
+    font-size: 1.3rem;
+    color: #666;
     padding: 1rem 0;
 }
-.galeriadosd a{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
 
+.galeria_dos_d .grid .descripcion .botones a{
+    margin-left: 2rem;
+}
 
 /*footer*/
 
