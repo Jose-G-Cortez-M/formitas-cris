@@ -3,7 +3,6 @@
     --celeste: #5cd8f4;
     --rosado: #e63373;
     --amarillo:#fdd12a;
-    --letra:#000;
     --degradado: linear-gradient(90deg, var(--celeste), var(--rosado));
 }
 
