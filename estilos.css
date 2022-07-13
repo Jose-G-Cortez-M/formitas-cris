@@ -3,7 +3,7 @@
     --celeste: #5cd8f4;
     --rosado: #e63373;
     --amarillo:#fdd12a;
-    --letra:#ffff;
+    --letra:#000;
     --degradado: linear-gradient(90deg, var(--celeste), var(--rosado));
 }
 
@@ -23,7 +23,7 @@
 
 *::selection {
     background: var(--rosado);
-    color: white;
+    color: black;
 }
 
 html {
@@ -210,7 +210,7 @@ header label {
 
 
 .acerca_de .columna .content h1 {
-    
+
     font-size: 3rem;
     color: #333;
 }
